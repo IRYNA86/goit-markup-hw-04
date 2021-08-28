@@ -163,7 +163,11 @@ ul {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2e3046;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -207,6 +211,22 @@ ul {
 .peculiarities {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.icons {
+  display: block;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+  display: block;
+  width: 70px;
+  height: 70px;
 }
 .peculiarities-list {
   display: flex;
@@ -331,7 +351,8 @@ ul {
   padding-bottom: 94px;
   background: #f5f4fa;
 }
-.team-title {
+.team-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 50px;
@@ -371,6 +392,58 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.clients-icons-cards > .clients-icons-number {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+.clients-icons-number {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  display: block;
+  width: 70px;
+  height: 70px;
+  fill: #afb1b8;
+}
+.clients-icons-number:hover,
+.clients-icons-number:focus {
+  border-color: var(--accent-color);
+}
+.clients-icons-number:hover .one,
+.clients-icons-number:hover .two,
+.clients-icons-number:hover .three,
+.clients-icons-number:hover .four,
+.clients-icons-number:hover .five,
+.clients-icons-number:hover .six,
+.clients-icons-number:focus .one,
+.clients-icons-number:focus .two,
+.clients-icons-number:focus .three,
+.clients-icons-number:focus .four,
+.clients-icons-number:focus .five,
+.clients-icons-number:focus .six {
+  fill: var(--accent-color);
+}
+
 /*----FOOTER----*/
 .footer {
   padding: 60px 0px;
