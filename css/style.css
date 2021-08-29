@@ -158,14 +158,8 @@ ul {
   display: block;
   margin-left: 10px;
 }
-.header-icons:hover .envelope,
-.header-icons:focus .envelope,
-.header-icons:hover .smartphone,
-.header-icons:focus .smartphone {
-  fill: var(--accent-color);
-}
-.header-email:hover,
-.header-email:focus {
+.header-email:hover .header-icons,
+.header-email:focus .header-icons {
   color: var(--accent-color);
 }
 .header-tel {
